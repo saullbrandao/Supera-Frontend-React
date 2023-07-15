@@ -1,0 +1,53 @@
+.statement-form {
+  display: flex;
+  gap: 5rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.statement-form label {
+  font-weight: bold;
+}
+
+.statement-form .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.statement-form input,
+.statement-form button {
+  height: 3rem;
+}
+
+.statement-form input[type='text'] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.statement-form button[type='submit'] {
+  background-color: #f37020;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+.statement-form button[type='submit']:hover {
+  filter: brightness(1.05);
+}
+
+.statement-form button[type='submit']:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 800px) {
+  .statement-form {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+}

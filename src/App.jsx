@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { StatementTable } from './components/StatementTable/StatementTable'
+import { StatementForm } from './components/StatementForm/StatementForm'
 import { apiURL } from './utils/constants'
 import './App.css'
 
@@ -16,6 +17,7 @@ function App() {
 
   return (
     <main>
+      <StatementForm updateStatement={updateStatement} />
       <StatementTable statement={statement} />
     </main>
   )
